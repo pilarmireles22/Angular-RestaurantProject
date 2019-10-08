@@ -1,0 +1,129 @@
+.general-information{
+    
+    height: 112px;
+    background-color: black;
+    width: 100%;
+    position: relative;
+    padding-top: 6px;
+    color:white;
+}
+.general-information-details{
+  display: -webkit-flex; /* Safari */
+  -webkit-justify-content: space-between; /* Safari 6.1+ */
+  display: flex;
+  justify-content: space-around;
+  color:white;
+  padding-top: 8px;
+}
+.count{
+ font-size:34px;
+ font-weight: 700;
+}
+.text{
+    
+    font-size: 20px;
+}
+.search-information{
+    
+    min-height: 440px;
+    background-color:white ;
+    width: 100%;
+    position: relative;
+    padding-top: 6px;
+    color:white;
+}
+.container {
+    max-width: 685px;
+    margin: 0 auto;
+}
+.sub-header-information {
+    margin-top: 38px;
+    display: flex;
+    justify-content: space-around;
+    min-height: 330px;
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+    border-radius: 7px;
+}
+.inline-block {
+    display: inline-block;
+}
+.search{
+    
+    width: 108px;
+    justify-content: center;
+    background-color: #0a0a0a;
+    border-color: #ff9800;
+}
+.title{ 
+    margin-bottom: 26px!important;
+}
+.form-control{
+    
+    font-size: 15px;
+    border: 1px solid #FF9800;
+
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #080808;
+    border-color: #FF9800;
+}
+
+.right-side {
+    position: absolute;
+    width: 40%;
+    left: 49%;
+}
+h1 {
+    
+    top: 13px;
+    font-family: 'prata';
+    width: 37%;
+    position: relative;
+    color:black;
+}
+h2 {
+    position: absolute;
+    width: 70%;
+    font-size: 28px;
+    top: 3%;
+    left: 104px;
+    color:rgb(242, 105, 92);
+}
+h2 {
+    font-family: 'muli', 'arial';
+    font-weight: 600
+}
+
+.left-img {
+    display: flex;
+    align-items: center;
+}
+
+.left-img img {
+    
+    height: 270px;
+    width: 100%;
+}
+/*formualrio*/
+/* .form-row {
+    display: block!important;
+    
+} */
+#cantidad{
+    
+    margin-bottom: 23px;
+}
+p{
+    color:black;
+    text-align: left;
+}
+button{
+    
+    display: flex;
+}
+body{
+    color:black;
+}

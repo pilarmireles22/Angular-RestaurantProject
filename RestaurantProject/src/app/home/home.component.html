@@ -1,0 +1,72 @@
+<div class="general-information">
+    <div class="general-information-details">
+        <div>
+            <div>
+                <label class="count">{{results.countries}} </label>
+            </div>
+            <div>
+                <label class="text">Countries</label>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label class="count">{{results.cities}} </label>
+            </div>
+            <div>
+                <label class="text">Cities</label>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label class="count">{{results.restaurants}} </label>
+            </div>
+            <div>
+                <label class="text">Restaurants</label>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="search-information">
+    <div class="container">
+        <div class="sub-header-information">
+            <div class="row">
+                <div class="left-img col-md-6">
+                    <img src="https://media.giphy.com/media/llTqHjjcvOKmzTVOl4/giphy.gif"
+                        alt="missing jpeg" />
+                </div>
+                <div class="inline-block col-md-6">
+                    <div class="title">
+                        <h1>The Local</h1>
+                        <h2>Restaurant <i class="fa fa-cutlery fa-2x"></i> </h2>
+                    </div>
+                    <form class="text-center  border-light ">
+                        <div class="form-row mb-3">
+                            <div class="col">
+                                <!-- Countries -->
+                                <div class="form-group">
+                                    <p>Countries</p>
+                                    <select class="form-control" name="country" [(ngModel)]="country">
+                                        <option selected disabled>Select Country</option>
+                                        <option  *ngFor="let x of countriesResults.countries;" [value]="x">{{x}}</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <!-- Cities -->
+                                <div class="form-group">
+                                    <p>Cities</p>
+                                    <select class="form-control" name="city" [(ngModel)]="city" >
+                                        <option selected disabled [value]="">Select Cities</option>
+                                        <option *ngFor="let x of citiesResults.cities;" [value]="x">{{x}}</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sign up button -->
+                        <a  [routerLink]="['/details-restaurants']" [queryParams]="{country:country, city:city}" type="submit" class="btn btn-primary search" (click)="searchAll()">Search</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
